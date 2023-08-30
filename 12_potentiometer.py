@@ -8,7 +8,7 @@ def init():
 def loop():
 	while True:
 		res = ADC0832.getResult()
-		vol = 5.0/255 * res
+		vol = 3.3/255 * res
 		print ('analog value: %03d  ||  voltage: %.2fV' %(res, vol))
 		time.sleep(0.2)
 
