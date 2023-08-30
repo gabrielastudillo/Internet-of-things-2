@@ -19,13 +19,13 @@ PIN_DI  = 22
 PIN_CS  = 17
 
 def setup():
-    GPIO.setwarnings(False)
-    GPIO.setmode(GPIO.BCM)
-    # set up the SPI interface pins
-    GPIO.setup(PIN_DI,  GPIO.OUT)
-    GPIO.setup(PIN_DO,  GPIO.IN)
-    GPIO.setup(PIN_CLK, GPIO.OUT)
-    GPIO.setup(PIN_CS,  GPIO.OUT)
+    	GPIO.setwarnings(False)
+    	GPIO.setmode(GPIO.BCM)
+    	# set up the SPI interface pins
+    	GPIO.setup(PIN_DI,  GPIO.OUT)
+    	GPIO.setup(PIN_DO,  GPIO.IN)
+    	GPIO.setup(PIN_CLK, GPIO.OUT)
+    	GPIO.setup(PIN_CS,  GPIO.OUT)
     
 def destroy():
 	GPIO.cleanup()    
