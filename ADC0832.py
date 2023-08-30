@@ -66,7 +66,7 @@ def getADC(channel):
 def loop():
 	while True:
 		print ("ADC[0]: {}\t ADC[1]: {}".format(getADC(0), getADC(1)))
-                time.sleep(1)res = getResult()
+                time.sleep(1)
 
 if __name__ == "__main__":
     setup()
