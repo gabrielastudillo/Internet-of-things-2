@@ -7,7 +7,7 @@ def init():
 
 def loop():
 	while True:
-		res = ADC0832.getResult()
+		res = ADC0832.getADC(0)
 		moisture = 255 - res
 		print 'analog value: %03d  moisture: %d' %(res, moisture)
 		time.sleep(0.1)
