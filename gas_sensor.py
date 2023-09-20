@@ -7,7 +7,7 @@ def init():
 
 def loop():
 	while True:
-		res = ADC0832.getResult()
+		res = ADC0832.getADC(0)
 		Gas_concentration = res
 		print 'analog value: %03d  Gas concentration: %d' %(res, Gas_concentration)
 		time.sleep(0.1)
