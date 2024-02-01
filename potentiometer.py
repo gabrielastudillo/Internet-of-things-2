@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import ADC0832
 import time
-a=1
+
 def init():
 	ADC0832.setup()
 
